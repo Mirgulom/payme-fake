@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="50dp"
+    android:paddingHorizontal="15dp"
+    tools:context=".DoctorActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/specialist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/doctor"
+            android:paddingVertical="10dp"
+            android:textSize="25sp"
+            android:drawablePadding="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="Выбрать спецалиста"/>
+        <TextView
+            android:id="@+id/diagnostic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/medical_bag"
+            android:layout_marginVertical="15dp"
+            android:paddingVertical="10dp"
+            android:textSize="25sp"
+            android:drawablePadding="10dp"
+            android:clickable="true"
+            android:text="Пройти диагностику"/>
+        <TextView
+            android:id="@+id/analize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/needle"
+            android:paddingVertical="10dp"
+            android:textSize="25sp"
+            android:drawablePadding="10dp"
+            android:clickable="true"
+            android:text="Сдать анализы"/>
+
+    </LinearLayout>
+
+</LinearLayout>
