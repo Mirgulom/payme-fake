@@ -13,4 +13,10 @@
     <string name="menu_support">Support</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="medicina">Записаться на прием к врачу</string>
+    <string name="monitoring">Мониторинг платежей</string>
+    <string name="paying">Оплата на расчестный счет</string>
+    <string name="proverka">Проверка задолжненности МИБ</string>
+    <string name="radar">Уведомление о штрафах ГУБДД</string>
+    <string name="straxovka">Автостраховние</string>
 </resources>

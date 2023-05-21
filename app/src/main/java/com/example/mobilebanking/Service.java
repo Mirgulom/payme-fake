@@ -2,7 +2,7 @@ package com.example.mobilebanking;
 
 public class Service {
     private String name;     // название
-
+    private int Id;
     private int serviceResource; // ресурс флага
 
     public Service(String name,  int service){
@@ -11,7 +11,7 @@ public class Service {
         this.serviceResource=service;
     }
 
-    public String getName() {    return this.name;    }
+    public String getName() {    return this.name;}
 
     public void setName(String name) {  this.name = name;  }
 

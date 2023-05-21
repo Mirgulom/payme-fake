@@ -2,6 +2,7 @@ package com.example.mobilebanking;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -30,14 +31,44 @@ public class MainInterface extends AppCompatActivity {
         // устанавливаем адаптер
         servicesList.setAdapter(stateAdapter);
         // слушатель выбора в списке
+
         AdapterView.OnItemClickListener itemListener = new AdapterView.OnItemClickListener() {
+
             @Override
             public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
 
                 // получаем выбранный пункт
-                Service selectedState = (Service) parent.getItemAtPosition(position);
-                Toast.makeText(getApplicationContext(), "Был выбран пункт " + selectedState.getName(),
-                        Toast.LENGTH_SHORT).show();
+                Service selectedState = (Service) servicesList.getItemAtPosition(position);
+
+                switch (position){
+                    case 0:
+                        servicesList.getItemAtPosition(position);
+                        Intent intent  = new Intent(getApplicationContext(), DoctorActivity.class);
+                        startActivity(intent);
+                        break;
+                    case 1:
+                        intent  = new Intent(getApplicationContext(), MonitoringActivity.class);
+                        startActivity(intent);
+                        break;
+                    case 2:
+                        intent  = new Intent(getApplicationContext(), PayingActivity.class);
+                        startActivity(intent);
+                        break;
+                    case 3:
+                        intent  = new Intent(getApplicationContext(), DebtActivity.class);
+                        startActivity(intent);
+                        break;
+                    case 4:
+                        intent  = new Intent(getApplicationContext(), TaxActivity.class);
+                        startActivity(intent);
+                        break;
+                    case 5:
+                        intent  = new Intent(getApplicationContext(), InsuranceActivity.class);
+                        startActivity(intent);
+                        break;
+                }
+//                Toast.makeText(getApplicationContext(), "Был выбран пункт " + selectedState.getName(),
+//                        Toast.LENGTH_SHORT).show();
             }
         };    servicesList.setOnItemClickListener(itemListener);   }
 
