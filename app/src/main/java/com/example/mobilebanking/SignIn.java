@@ -37,7 +37,7 @@ public class SignIn extends AppCompatActivity {
                     Boolean checkCredentials = databaseHelper.checkNumberPassword(email, password);
                     if(checkCredentials == true){
                         Toast.makeText(SignIn.this, "Login Successfully!", Toast.LENGTH_SHORT).show();
-                        Intent intent  = new Intent(getApplicationContext(), MainInterface.class);
+                        Intent intent  = new Intent(getApplicationContext(), MainInterface2.class);
                         startActivity(intent);
                     }else{
                         Toast.makeText(SignIn.this, "Invalid Credentials", Toast.LENGTH_SHORT).show();

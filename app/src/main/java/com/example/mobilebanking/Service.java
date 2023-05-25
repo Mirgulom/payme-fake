@@ -6,10 +6,10 @@ public class Service {
     private int serviceResource; // ресурс флага
 
     public Service(String name,  int service){
-
         this.name=name;
         this.serviceResource=service;
     }
+
 
     public String getName() {    return this.name;}
 
