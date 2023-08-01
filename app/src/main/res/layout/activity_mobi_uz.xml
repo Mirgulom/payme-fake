@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/side_nav_bar"
+    tools:context=".MobiUzActivity">
+
+
+    <ImageView
+        android:id="@+id/beeline_logo"
+        android:layout_width="150dp"
+        android:layout_height="105dp"
+        android:src="@drawable/mobiuz"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="50dp"/>
+
+    <EditText
+        android:id="@+id/number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/beeline_logo"
+        android:background="@drawable/signin_shape"
+        android:padding="15dp"
+        android:inputType="phone"
+        android:layout_marginHorizontal="15dp"
+        android:hint="Номер телефона"
+        android:layout_marginBottom="20dp"/>
+
+    <EditText
+        android:id="@+id/count_paying"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/number"
+        android:background="@drawable/signin_shape"
+        android:inputType="number"
+        android:padding="15dp"
+        android:layout_marginHorizontal="15dp"
+        android:hint="Сумма платежа"/>
+
+    <Button
+        android:id="@+id/pay_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:padding="15dp"
+        android:background="@drawable/signin_shape"
+        android:text="Оплатить"
+        android:layout_marginHorizontal="15dp"/>
+</RelativeLayout>
