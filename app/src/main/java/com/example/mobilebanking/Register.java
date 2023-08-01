@@ -32,18 +32,20 @@ public class Register extends AppCompatActivity {
         binding.signUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String email = binding.phoneNumber.getText().toString();
+                String number = binding.phoneNumber.getText().toString();
+                String profileName = binding.profileName.getText().toString();
+                String profileBirthday = binding.profileBirthday.getText().toString();
                 String password = binding.password.getText().toString();
                 String confirmPassword = binding.confirmPassword.getText().toString();
 
-                if(email.equals("")||password.equals("")||confirmPassword.equals(""))
+                if(profileName.equals("") || profileBirthday.equals("") || number.equals("")||password.equals("")||confirmPassword.equals(""))
                     Toast.makeText(Register.this, "All fields are mandatory", Toast.LENGTH_SHORT).show();
                 else{
                     if(password.equals(confirmPassword)){
-                        Boolean checkUserEmail = databaseHelper.checkNumber(email);
+                        Boolean checkUserNumber = databaseHelper.checkNumber(number);
 
-                        if(checkUserEmail == false){
-                            Boolean insert = databaseHelper.insertData(email, password);
+                        if(checkUserNumber == false){
+                            Boolean insert = databaseHelper.insertData(number,profileName, profileBirthday, password);
 
                             if(insert == true){
                                 Toast.makeText(Register.this, "Signup Successfully!", Toast.LENGTH_SHORT).show();

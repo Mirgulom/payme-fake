@@ -24,6 +24,21 @@
 
 
     <EditText
+        android:id="@+id/profileName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/signin_shape"
+        android:hint="Имя"
+        android:inputType="text"
+        android:drawableLeft="@drawable/baseline_person_pin_24"
+        android:fontFamily="@font/jetbrains_mono_light"
+        android:textColorHint="#EAE8E8"
+        android:textColor="#EAE8E8"
+        android:padding="15dp"
+        android:drawablePadding="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="20dp"/>
+    <EditText
         android:id="@+id/phoneNumber"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -33,8 +48,23 @@
         android:fontFamily="@font/jetbrains_mono_light"
         android:textColorHint="#EAE8E8"
         android:textColor="#EAE8E8"
-        android:padding="20dp"
+        android:padding="15dp"
         android:drawableLeft="@drawable/baseline_phone_android_24"
+        android:drawablePadding="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="20dp"/>
+    <EditText
+        android:id="@+id/profileBirthday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/signin_shape"
+        android:fontFamily="@font/jetbrains_mono_light"
+        android:hint="День рождения"
+        android:inputType="date"
+        android:drawableLeft="@drawable/baseline_calendar_today_24"
+        android:textColorHint="#EAE8E8"
+        android:textColor="#EAE8E8"
+        android:padding="15dp"
         android:drawablePadding="5dp"
         android:layout_marginTop="20dp"
         android:layout_marginHorizontal="20dp"/>
@@ -49,7 +79,7 @@
         android:fontFamily="@font/jetbrains_mono_light"
         android:textColorHint="#EAE8E8"
         android:textColor="#EAE8E8"
-        android:padding="20dp"
+        android:padding="15dp"
         android:drawableLeft="@drawable/baseline_security_24"
         android:drawablePadding="5dp"
         android:layout_marginTop="20dp"
@@ -64,7 +94,7 @@
         android:fontFamily="@font/jetbrains_mono_light"
         android:textColorHint="#EAE8E8"
         android:textColor="#EAE8E8"
-        android:padding="20dp"
+        android:padding="15dp"
         android:drawableLeft="@drawable/baseline_security_24"
         android:drawablePadding="5dp"
         android:layout_marginTop="20dp"
@@ -81,7 +111,7 @@
         android:textSize="25dp"
         android:textColor="#D7DCDD"
         android:padding="10dp"
-        android:backgroundTint="#00333333"
+        android:backgroundTint="#10FFFFFF"
         android:layout_marginTop="35dp"
         android:layout_marginHorizontal="50dp"
         android:onClick="toMainInterface"/>
@@ -96,9 +126,9 @@
         android:fontFamily="@font/jetbrains_mono_medium"
         android:gravity="center"
         android:textAlignment="center"
-        android:textColor="#D7DCDD"
+        android:textColor="#F1F1F1"
         android:padding="10dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:onClick="LogIn"/>
 
 </LinearLayout>

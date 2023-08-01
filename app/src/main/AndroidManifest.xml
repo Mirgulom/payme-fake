@@ -6,11 +6,32 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@drawable/logo_01"
+        android:icon="@drawable/app_logo"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.MobileBanking"
         tools:targetApi="31">
+        <activity
+            android:name=".EditActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HumansActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PerfectumActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UzmobileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MobiUzActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UcellActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OperatorActivity"
+            android:exported="false" />
         <activity
             android:name=".PaymentParagraph.GamesSC"
             android:exported="false" />

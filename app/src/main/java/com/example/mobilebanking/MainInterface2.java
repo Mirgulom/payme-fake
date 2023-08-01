@@ -23,17 +23,17 @@ public class MainInterface2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityMainInterface2Binding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        replaceFragment(new PaymentFragment());
+        replaceFragment(new ServiceFragment());
 
         binding.bottomNavigationView.setBackground(null);
         binding.bottomNavigationView.setOnItemSelectedListener(item -> {
 
             switch (item.getItemId()) {
                 case R.id.payment:
-                    replaceFragment(new PaymentFragment());
+                    replaceFragment(new ServiceFragment());
                     break;
                 case R.id.service:
-                    replaceFragment(new ServiceFragment());
+                    replaceFragment(new PaymentFragment());
                     break;
                 case R.id.profile:
                     replaceFragment(new ProfileFragment());
@@ -45,6 +45,11 @@ public class MainInterface2 extends AppCompatActivity {
 
 
 
+    }
+
+    @Override
+    public void onRestart(){
+        super.onRestart();
     }
     private  void replaceFragment(Fragment fragment) {
         FragmentManager fragmentManager = getSupportFragmentManager();

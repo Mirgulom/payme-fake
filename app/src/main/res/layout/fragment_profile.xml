@@ -12,10 +12,11 @@
 
         <TextView
             android:id="@+id/nameText"
-            android:layout_marginTop="70dp"
+            android:layout_marginTop="150dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
+            android:padding="10dp"
             android:textSize="35sp"/>
 
         <TextView
@@ -23,11 +24,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
+            android:padding="5dp"
             android:layout_marginTop="30dp"
             android:textSize="20sp"
             android:layout_centerHorizontal="true"
-            android:layout_below="@+id/nameText"
-            android:text="04 july 2003"/>
+            android:layout_below="@+id/nameText"/>
         <View
             android:id="@+id/grayline"
             android:layout_width="match_parent"
@@ -37,16 +38,31 @@
             android:layout_below="@+id/birthdayText"/>
 
         <TextView
+            android:id="@+id/profile_number"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="5dp"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
             android:layout_below="@+id/grayline"/>
+        <View
+            android:id="@+id/grayline_2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/profile_number"/>
 
 
         <Button
+            android:id="@+id/edit_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:layout_marginBottom="20dp"
+            android:layout_marginBottom="70dp"
+            android:paddingVertical="15dp"
             android:text="Редактировать профиль"
             android:layout_marginHorizontal="15dp"/>
     </RelativeLayout>
